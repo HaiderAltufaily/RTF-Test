@@ -19,7 +19,7 @@ function App() {
             Convert HTML text to RTF!
           </Text>
         </Stack>
-        <Stack marginTop={"50"} px="100">
+        <Stack marginTop={"50"}>
           <Example />
         </Stack>
       </Box>

@@ -18,7 +18,7 @@ const Example = ({ placeholder }) => {
   const href = URL.createObjectURL(blob);
 
   return (
-    <Stack spacing="40" align="center">
+    <Stack width="100%" spacing="40" align={{ lg: "center", base: "auto" }}>
       <JoditEditor
         ref={editor}
         value={content}
@@ -29,6 +29,8 @@ const Example = ({ placeholder }) => {
         }}
       />
       <Button
+        width={{ base: "80%", lg: "auto" }}
+        alignSelf={"center"}
         color="white"
         background={"#0756A5"}
         colorScheme="blue"
