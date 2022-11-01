@@ -34,7 +34,7 @@ const Example = ({ placeholder }) => {
         colorScheme="blue"
         as={"a"}
         href={href}
-        download="myData.rtf"
+        download="Your file.rtf"
       >
         Download Now!
       </Button>
