@@ -1,10 +1,9 @@
 import React, { useState, useRef } from "react";
 import JoditEditor from "jodit-react";
-import convertHtmlToRtf from "../convert";
 import HtmlToRtfBrowser from "html-to-rtf-browser";
-import { Button, Link, Stack } from "@chakra-ui/react";
+import { Button, Stack } from "@chakra-ui/react";
 
-const Example = ({ placeholder }) => {
+const EditorJodit = ({ placeholder }) => {
   let htmlToRtf = new HtmlToRtfBrowser();
 
   const editor = useRef(null);
@@ -22,8 +21,8 @@ const Example = ({ placeholder }) => {
       <JoditEditor
         ref={editor}
         value={content}
-        tabIndex={1} // tabIndex of textarea
-        onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
+        tabIndex={1}
+        onBlur={(newContent) => setContent(newContent)}
         onChange={(newContent) => {
           setContent(newContent);
         }}
@@ -43,4 +42,4 @@ const Example = ({ placeholder }) => {
     </Stack>
   );
 };
-export default Example;
+export default EditorJodit;

@@ -1,10 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./store/counter/Counter";
 import "./App.css";
-import Example from "./components/Jodit";
 import { Box, ChakraProvider, Stack, Text } from "@chakra-ui/react";
-// /0756A5
+import EditorJodit from "./components/Jodit";
 function App() {
   return (
     <ChakraProvider>
@@ -20,7 +17,7 @@ function App() {
           </Text>
         </Stack>
         <Stack marginTop={"50"}>
-          <Example />
+          <EditorJodit />
         </Stack>
       </Box>
     </ChakraProvider>
